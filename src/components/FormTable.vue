@@ -16,7 +16,7 @@ const showErrorNotification = (errorMessage: string) => {
 }
 
 const handleSortChange = ({ prop, order }: { prop: ProductFilter['field']; order: string }) => {
-  const sortType = order === 'ascending' ? 'asc' : order === 'descending ' ? 'dsc' : ''
+  const sortType = order === 'ascending' ? 'asc' : order === 'descending ' ? 'desc' : ''
 
   productsStore.sortOption.field = prop
   productsStore.sortOption.sortType = sortType

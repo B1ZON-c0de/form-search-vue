@@ -8,5 +8,5 @@ export interface Product {
 
 export interface ProductFilter {
   field: keyof Product
-  sortType: 'asc' | 'dsc' | ''
+  sortType: 'asc' | 'desc' | ''
 }
