@@ -1,0 +1,284 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "title": "Ноутбук HP Pavilion",
+      "price": 54999,
+      "inStock": true,
+      "category": "electronics"
+    },
+    {
+      "id": 102,
+      "title": "Смартфон Samsung Galaxy",
+      "price": 79999,
+      "inStock": true,
+      "category": "electronics"
+    },
+    {
+      "id": 103,
+      "title": "Наушники Sony",
+      "price": 29999,
+      "inStock": true,
+      "category": "electronics"
+    },
+    {
+      "id": 104,
+      "title": "Фитнес-браслет Xiaomi",
+      "price": 4999,
+      "inStock": true,
+      "category": "electronics"
+    },
+    {
+      "id": 105,
+      "title": "Планшет Apple iPad",
+      "price": 65999,
+      "inStock": false,
+      "category": "electronics"
+    },
+    {
+      "id": 106,
+      "title": "Джинсы Levi's",
+      "price": 7999,
+      "inStock": true,
+      "category": "clothing"
+    },
+    {
+      "id": 107,
+      "title": "Футболка женская",
+      "price": 2999,
+      "inStock": true,
+      "category": "clothing"
+    },
+    {
+      "id": 108,
+      "title": "Куртка зимняя",
+      "price": 18999,
+      "inStock": true,
+      "category": "clothing"
+    },
+    {
+      "id": 109,
+      "title": "Кроссовки Nike",
+      "price": 12999,
+      "inStock": false,
+      "category": "shoes"
+    },
+    {
+      "id": 110,
+      "title": "Туфли на каблуке",
+      "price": 8999,
+      "inStock": true,
+      "category": "shoes"
+    },
+    {
+      "id": 111,
+      "title": "Микроволновка LG",
+      "price": 12999,
+      "inStock": true,
+      "category": "appliances"
+    },
+    {
+      "id": 112,
+      "title": "Холодильник Bosch",
+      "price": 89999,
+      "inStock": true,
+      "category": "appliances"
+    },
+    {
+      "id": 113,
+      "title": "Кофемашина DeLonghi",
+      "price": 45999,
+      "inStock": false,
+      "category": "appliances"
+    },
+    {
+      "id": 114,
+      "title": "Пылесос Dyson",
+      "price": 54999,
+      "inStock": true,
+      "category": "appliances"
+    },
+    {
+      "id": 115,
+      "title": "Гарри Поттер и философский камень",
+      "price": 999,
+      "inStock": true,
+      "category": "books"
+    },
+    {
+      "id": 116,
+      "title": "1984 Джордж Оруэлл",
+      "price": 799,
+      "inStock": true,
+      "category": "books"
+    },
+    {
+      "id": 117,
+      "title": "Властелин колец",
+      "price": 1499,
+      "inStock": false,
+      "category": "books"
+    },
+    {
+      "id": 118,
+      "title": "JavaScript для начинающих",
+      "price": 2599,
+      "inStock": true,
+      "category": "books"
+    },
+    {
+      "id": 119,
+      "title": "Диван угловой",
+      "price": 45999,
+      "inStock": true,
+      "category": "furniture"
+    },
+    {
+      "id": 120,
+      "title": "Стол офисный",
+      "price": 12999,
+      "inStock": true,
+      "category": "furniture"
+    },
+    {
+      "id": 121,
+      "title": "Стул компьютерный",
+      "price": 8999,
+      "inStock": true,
+      "category": "furniture"
+    },
+    {
+      "id": 122,
+      "title": "Кровать двуспальная",
+      "price": 35999,
+      "inStock": false,
+      "category": "furniture"
+    },
+    {
+      "id": 123,
+      "title": "Футбольный мяч",
+      "price": 2999,
+      "inStock": true,
+      "category": "sport"
+    },
+    {
+      "id": 124,
+      "title": "Гантели наборные",
+      "price": 4999,
+      "inStock": true,
+      "category": "sport"
+    },
+    {
+      "id": 125,
+      "title": "Йога-мат",
+      "price": 1999,
+      "inStock": true,
+      "category": "sport"
+    },
+    {
+      "id": 126,
+      "title": "Теннисная ракетка",
+      "price": 8999,
+      "inStock": false,
+      "category": "sport"
+    },
+    {
+      "id": 127,
+      "title": "Подушка ортопедическая",
+      "price": 3999,
+      "inStock": true,
+      "category": "home"
+    },
+    {
+      "id": 128,
+      "title": "Одеяло пуховое",
+      "price": 7999,
+      "inStock": true,
+      "category": "home"
+    },
+    {
+      "id": 129,
+      "title": "Набор посуды",
+      "price": 12999,
+      "inStock": true,
+      "category": "home"
+    },
+    {
+      "id": 130,
+      "title": "Шторы черные",
+      "price": 5999,
+      "inStock": false,
+      "category": "home"
+    }
+  ],
+  "filters": {
+    "category": [
+      {
+        "value": "electronics",
+        "label": "Электроника"
+      },
+      {
+        "value": "clothing",
+        "label": "Одежда"
+      },
+      {
+        "value": "shoes",
+        "label": "Обувь"
+      },
+      {
+        "value": "appliances",
+        "label": "Бытовая техника"
+      },
+      {
+        "value": "books",
+        "label": "Книги"
+      },
+      {
+        "value": "furniture",
+        "label": "Мебель"
+      },
+      {
+        "value": "sport",
+        "label": "Спорт"
+      },
+      {
+        "value": "home",
+        "label": "Дом"
+      }
+    ],
+    "price": [
+      {
+        "value": "0-4999",
+        "label": "0 - 4999"
+      },
+      {
+        "value": "5000-9999",
+        "label": "5000 - 9999"
+      },
+      {
+        "value": "10000-19999",
+        "label": "10000 - 19999"
+      },
+      {
+        "value": "20000-29999",
+        "label": "20000 - 29999"
+      },
+      {
+        "value": "30000-49999",
+        "label": "30000 - 49999"
+      },
+      {
+        "value": "50000-69999",
+        "label": "50000 - 69999"
+      },
+      {
+        "value": "70000-89999",
+        "label": "70000 - 89999"
+      },
+      {
+        "value": "90000-119999",
+        "label": "90000 - 119999"
+      }
+    ]
+  }
+}
