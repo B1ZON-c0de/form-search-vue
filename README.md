@@ -6,7 +6,7 @@
 pnpm run dev
 ```
 
-## Backend(json-srever)
+## Backend(json-server)
 
 ```
 pnpm run server:dev
