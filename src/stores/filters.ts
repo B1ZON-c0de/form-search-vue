@@ -24,9 +24,10 @@ export const useFiltersStore = defineStore('filters', () => {
       isLoading.value = true
       errorMessage.value = ''
       const res = await axios.get<FilterCategory>('/api/filters')
-      if (!(res.statusText === 'OK')) {
-        throw new Error('Не удалось получить фильтры')
-      }
+      // Из-за vercel
+      // if (!(res.statusText === 'OK')) {
+      //   throw new Error('Не удалось получить фильтры')
+      // }
 
       filtersCategory.category = [...INITIAL_CATEGORY_STATE.category, ...res.data.category]
       filtersCategory.price = [...INITIAL_CATEGORY_STATE.price, ...res.data.price]

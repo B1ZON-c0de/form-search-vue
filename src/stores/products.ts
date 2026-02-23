@@ -49,9 +49,10 @@ export const useProductsStore = defineStore('products', () => {
           }),
         },
       })
-      if (!(res.statusText === 'OK')) {
-        throw new Error('Не удалось получить продукты')
-      }
+      // Из-за vercel
+      // if (!(res.statusText === 'OK')) {
+      //   throw new Error('Не удалось получить продукты')
+      // }
       productsData.value = res.data
       totalItems.value = Number(res.headers['x-total-count'])
     } catch (e) {
