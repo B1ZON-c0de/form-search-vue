@@ -1,7 +1,7 @@
 import { INITIAL_CATEGORY_STATE, INITIAL_FILTER_STATE } from '@/constants/constants'
 import type { FilterCategory, FiltersState } from '@/types/filter.types'
 import axios from 'axios'
-import { defineStore, acceptHMRUpdate } from 'pinia'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 import { reactive, ref } from 'vue'
 
 export const useFiltersStore = defineStore('filters', () => {
@@ -23,7 +23,7 @@ export const useFiltersStore = defineStore('filters', () => {
     try {
       isLoading.value = true
       errorMessage.value = ''
-      const res = await axios.get<FilterCategory>('http://localhost:3000/filters')
+      const res = await axios.get<FilterCategory>('/api/filters')
       if (!(res.statusText === 'OK')) {
         throw new Error('Не удалось получить фильтры')
       }

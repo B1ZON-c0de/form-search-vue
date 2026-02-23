@@ -1,5 +1,5 @@
 import type { Product, ProductFilter } from '@/types/user.type'
-import { defineStore, acceptHMRUpdate } from 'pinia'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 import axios from 'axios'
 import { reactive, ref } from 'vue'
 import { useFiltersStore } from './filters'
@@ -19,7 +19,7 @@ export const useProductsStore = defineStore('products', () => {
     try {
       isLoading.value = true
       errorMessage.value = ''
-      const res = await axios.get('http://localhost:3000/products', {
+      const res = await axios.get('/api/products', {
         params: {
           _page: currentPage.value,
 

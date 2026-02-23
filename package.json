@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
-    "server:dev": "json-server --watch db.json",
+    "server:dev": "json-server --watch db.json --routes api/routes.json",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
