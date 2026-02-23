@@ -52,6 +52,7 @@ export default function handler(req, res) {
     const paginated = products.slice(start, start + pageSize)
 
     res.setHeader('x-total-count', products.length)
+    res.setHeader('Cache-Control', 'no-store')
     res.status(200).json(paginated)
   } catch (e) {
     res.status(500).json({ error: 'Server error' })

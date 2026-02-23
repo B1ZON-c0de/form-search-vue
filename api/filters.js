@@ -6,6 +6,7 @@ export default function handler(req, res) {
     const filePath = path.join(process.cwd(), 'db.json')
     const db = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
+    res.setHeader('Cache-Control', 'no-store')
     res.status(200).json(db.filters)
   } catch (e) {
     res.status(500).json({ error: 'Server error' })
