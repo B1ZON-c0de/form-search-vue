@@ -1,11 +1,7 @@
 import jsonServer from 'json-server'
-import fs from 'fs'
 
 const server = jsonServer.create()
-
-const data = JSON.parse(fs.readFileSync('db.json', 'utf-8'))
-const router = jsonServer.router(data)
-
+const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
